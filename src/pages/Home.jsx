@@ -1,6 +1,7 @@
+/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 
-export class Home extends Component {
+class Home extends Component {
   render() {
     return <div>Home</div>;
   }
