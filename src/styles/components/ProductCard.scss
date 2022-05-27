@@ -1,0 +1,98 @@
+@import '../abstract/mixins';
+
+.product-card {
+  position: relative;
+  padding: 1.5rem 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 0.4rem;
+  background-color: var(--gray-200);
+}
+
+.product-card__header {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  background-color: var(--light);
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.product-card__img {
+  display: block;
+  width: 80%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+.product-card__title {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  min-height: 40px;
+
+  @include sm() {
+    font-size: 1rem;
+  }
+}
+
+.product-card__category {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+  background-color: var(--dark);
+  color: var(--light);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.product-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.product-card__countdown {
+  font-weight: 700;
+  color: var(--gray-800);
+}
+
+.product-card__countdown--success {
+  color: var(--success);
+}
+
+.product-card__countdown--warning {
+  color: var(--warning);
+}
+
+.product-card__countdown--danger {
+  color: var(--danger);
+}
+
+.product-card__button {
+  padding: 0.5rem 0.8rem;
+  border-width: 1px;
+  border-color: var(--primary);
+  border-style: solid;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  color: var(--light);
+  font-weight: 700;
+  text-decoration: none;
+  outline: none;
+}
+
+.product-card__button:active,
+.product-card__button:hover {
+  opacity: 0.8;
+}

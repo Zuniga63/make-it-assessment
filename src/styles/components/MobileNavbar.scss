@@ -10,6 +10,7 @@
   transform: translateX(-100%);
   transition-property: transform;
   transition-duration: 300ms;
+  z-index: var(--z-fixed);
 
   @include md() {
     display: none;

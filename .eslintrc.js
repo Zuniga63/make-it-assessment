@@ -29,5 +29,6 @@ module.exports = {
     'prettier/prettier': RULES.ERROR,
     'arrow-body-style': RULES.OFF,
     'react/prop-types': RULES.OFF,
+    'no-unused-vars': RULES.WARN,
   },
 };

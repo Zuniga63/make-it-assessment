@@ -11,7 +11,7 @@ $xxl: 1536px;
 }
 
 @mixin md {
-  @media (min-width: #{$sm}) {
+  @media (min-width: #{$md}) {
     @content;
   }
 }

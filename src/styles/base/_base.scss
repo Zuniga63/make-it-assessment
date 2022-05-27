@@ -5,3 +5,9 @@
 .font-bold {
   font-weight: 700;
 }
+
+.shadow {
+  -webkit-box-shadow: 0px 10px 13px -7px #343a40,
+    5px 9px 11px 8px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #343a40, 5px 9px 11px 8px rgba(0, 0, 0, 0);
+}

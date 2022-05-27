@@ -1,0 +1,37 @@
+@import '../abstract/mixins';
+
+.home__header,
+.home__body {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home__header {
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-bottom-style: double;
+  border-bottom-width: 5px;
+  border-bottom-color: var(--gray-600);
+}
+
+.home__body {
+  @include md() {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+
+  @include xl() {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.home__title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--gray-800);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
