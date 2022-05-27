@@ -11,8 +11,7 @@ export default class AppBar extends Component {
     this.state = {
       routes: [
         { id: 1, path: '/', name: 'Home' },
-        { id: 2, path: 'about', name: 'Acerca de' },
-        { id: 3, path: 'product/1', name: 'Productos' },
+        { id: 2, path: 'about', name: 'About' },
       ],
       showNavbar: false,
     };
