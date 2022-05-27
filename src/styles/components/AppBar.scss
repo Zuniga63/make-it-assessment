@@ -1,0 +1,45 @@
+@import '../abstract/mixins';
+
+.app-bar {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: var(--header-height);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: var(--light);
+
+  @include lg() {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.app-bar__toggle {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 100%;
+  border-color: transparent;
+  color: var(--gray-800);
+  background-color: var(--light);
+  transition-property: background;
+  transition-duration: 200ms;
+  outline: none;
+
+  @include md() {
+    display: none;
+  }
+}
+
+.app-bar__toggle:active {
+  background-color: var(--gray-200);
+}
+
+.app-bar__toggle__icon {
+  width: 20px;
+  height: 20px;
+}

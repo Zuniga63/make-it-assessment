@@ -1,10 +1,8 @@
-/* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react';
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
-class ProductDetail extends Component {
-  render() {
-    return <div>ProductDetail</div>;
-  }
+export default function ProductDetail() {
+  const { id } = useParams();
+
+  return <div>ProductDetail {id} </div>;
 }
-
-export default ProductDetail;

@@ -1,0 +1,31 @@
+@import '../abstract/mixins';
+
+.desktop-navbar {
+  display: none;
+  list-style: none;
+  color: var(--gray-800);
+  margin: 0;
+
+  @include md() {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-grow: 1;
+  }
+}
+
+.desktop-navbar__link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.desktop-navbar__link:active {
+  background-color: var(--gray-200);
+}
