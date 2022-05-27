@@ -1,10 +1,17 @@
-/* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getAllProducts } from '../store';
 
-class Home extends Component {
-  render() {
-    return <div>Home</div>;
-  }
+function Home() {
+  const { products } = useSelector((state) => state);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getAllProducts());
+  }, []);
+
+  console.log(products);
+  return <div>Home</div>;
 }
 
 export default Home;
